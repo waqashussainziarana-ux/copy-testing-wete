@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WETE - Women's Empowerment through Education</title>
+    <meta name="description" content="Supporting safe, discreet education programs for women and girls in Afghanistan." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Merriweather for headings (serif) and Inter for body (sans) to match the design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+            },
+            colors: {
+              brand: {
+                cream: '#F9F5EB',
+                sand: '#F0EAD6',
+                darkBlue: '#0B3D59',
+                teal: '#2A6F62',
+                accent: '#D4A373',
+                text: '#1F2937'
+              }
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+    <style>
+      /* Global styles */
+      body {
+        margin: 0;
+        padding: 0;
+        color: #1F2937;
+      }
+    </style>
+</head>
+  <body class="antialiased relative min-h-screen">
+    
+    <!-- GLOBAL BACKGROUND START -->
+    <!-- Illustrated, painterly, slightly textured (watercolor or paper grain) -->
+    <div id="global-bg" class="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-[#FFFBF2]">
+        
+        <!-- 1. Paper Texture Overlay (Global) - Enhanced for watercolor feel -->
+        <div class="absolute inset-0 opacity-50 mix-blend-multiply z-50 pointer-events-none" 
+             style="background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); background-size: 200px;">
+        </div>
+
+        <!-- 2. Sky Gradient - Warmer, softer, peaceful mood -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#FFFDF5] via-[#FFF0D4] to-[#FDE4C9]"></div>
+
+        <!-- 3. Soft Sun Glow (Hopeful lighting) -->
+        <div class="absolute top-[5%] right-[25%] w-96 h-96 bg-amber-100 rounded-full blur-3xl opacity-40 mix-blend-screen"></div>
+
+        <!-- 4. Rolling Hills (Watercolor wash style) -->
+        
+        <!-- Hill Layer 1: Furthest (Hazy) - Adjusted bottom for mobile -->
+        <div class="absolute bottom-[20%] md:bottom-[25%] left-[-10%] w-[120%] h-[50%] bg-gradient-to-b from-[#E6DCC3] to-[#DBCDAF] opacity-70 rounded-[100%] blur-md transform rotate-[-2deg]"></div>
+        
+        <!-- Hill Layer 2: Mid-distance (Base for Village) - Adjusted bottom for mobile -->
+        <div class="absolute bottom-[10%] md:bottom-[12%] right-[-10%] w-[130%] h-[55%] bg-gradient-to-b from-[#DBCDAF] to-[#Cebf9d] opacity-90 rounded-[100%] blur-sm transform rotate-[1deg]"></div>
+
+        <!-- Village & Greenery Layer (Traditional Architecture) -->
+        <!-- Responsive Positioning: Smaller and further left on mobile to avoid camel overlap -->
+        <div class="absolute bottom-[22%] left-[-25%] md:bottom-[30%] md:left-[8%] w-[600px] h-[200px] z-5 opacity-80 pointer-events-none transform scale-[0.4] sm:scale-60 md:scale-90 origin-bottom-left mix-blend-multiply transition-all duration-500">
+           <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#9CA685;stop-opacity:1" /> <!-- Muted Sage -->
+                  <stop offset="100%" style="stop-color:#7D8A68;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="houseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#D4C5A0;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#B8AA80;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+
+              <!-- Muted Greenery (Hope) -->
+              <path d="M50 150 Q 70 110 90 150 T 130 150 T 170 150" fill="url(#treeGrad)" opacity="0.8" />
+              <path d="M350 160 Q 370 120 390 160" fill="url(#treeGrad)" opacity="0.8" />
+
+              <!-- Village Cluster (Traditional Mud Houses/Qala) -->
+              <!-- Main Structure -->
+              <rect x="150" y="100" width="80" height="50" fill="url(#houseGrad)" />
+              <path d="M145 100 H235 L230 95 H150 Z" fill="#9C8C6B" /> <!-- Flat Roof Trim -->
+              <!-- Windows/Doors (Darker Mud) -->
+              <rect x="165" y="115" width="10" height="15" fill="#6B5B45" opacity="0.5" rx="1" />
+              <rect x="205" y="115" width="10" height="15" fill="#6B5B45" opacity="0.5" rx="1" />
+              <rect x="180" y="130" width="20" height="20" fill="#5D4D3A" opacity="0.6" rx="1" /> <!-- Door -->
+
+              <!-- Tower/Turret -->
+              <rect x="130" y="80" width="25" height="70" fill="url(#houseGrad)" />
+              <path d="M125 80 H160 L155 75 H130 Z" fill="#9C8C6B" /> 
+
+              <!-- Background Wall -->
+              <rect x="230" y="120" width="60" height="30" fill="url(#houseGrad)" opacity="0.9" />
+              
+              <!-- Another Small House -->
+              <rect x="280" y="110" width="50" height="40" fill="url(#houseGrad)" />
+              <rect x="300" y="125" width="10" height="10" fill="#6B5B45" opacity="0.5" rx="1" />
+
+              <!-- More Greenery around village -->
+              <circle cx="270" cy="140" r="20" fill="url(#treeGrad)" opacity="0.9" />
+              <circle cx="110" cy="145" r="25" fill="url(#treeGrad)" opacity="0.9" />
+           </svg>
+        </div>
+
+        <!-- Camel Layer -->
+        <!-- Responsive Positioning: Smaller on mobile, pushed to right edge -->
+        <div class="absolute bottom-[12%] right-[-5%] md:bottom-[18%] md:right-[8%] w-32 h-32 md:w-52 md:h-52 z-10 pointer-events-none transform -scale-x-100 mix-blend-multiply opacity-90 transition-all duration-500">
+            
+            <!-- User Image -->
+            <img src="https://wete.ca/wp-content/uploads/2026/01/ChatGPT-Image-Jan-13-2026-05_06_45-PM.png" alt="Camel" class="w-full h-full object-contain" />
+           
+        </div>
+
+        <!-- Hill Layer 3: Foreground (Soft Sandy Tones) -->
+        <div class="absolute bottom-[-30%] left-0 w-[110%] h-[50%] bg-gradient-to-t from-[#Cebf9d] to-[#EBE0C5] opacity-100 rounded-[30%] blur-xl transform rotate-[-1deg]"></div>
+        
+        <!-- Warm Overlay to Unify Colors (Sepia/Pastel Tint) -->
+        <div class="absolute inset-0 bg-amber-50/20 mix-blend-color pointer-events-none"></div>
+    </div>
+    <!-- GLOBAL BACKGROUND END -->
+
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
