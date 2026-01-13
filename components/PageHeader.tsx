@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
   return (
-    <div className="bg-[#FFFBF2] border-b border-stone-200 pt-32 pb-12 relative overflow-hidden">
+    <div className="bg-[#FFFBF2] pt-32 pb-24 relative overflow-hidden">
        {/* Subtle overlay to distinguish from body bg slightly if needed, or keep transparent */}
       <div className="absolute inset-0 bg-brand-sand/20 pointer-events-none"></div>
 
@@ -30,6 +30,22 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
             {subtitle}
           </p>
         )}
+      </div>
+
+      {/* Curved Separator at the bottom */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+        <svg 
+          className="relative block w-full h-[40px] md:h-[60px]" 
+          data-name="Layer 1" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1440 120" 
+          preserveAspectRatio="none"
+        >
+          <path 
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L0,320Z" 
+            className="fill-white/40"
+          ></path>
+        </svg>
       </div>
     </div>
   );
