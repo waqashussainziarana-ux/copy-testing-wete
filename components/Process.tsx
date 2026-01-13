@@ -55,8 +55,8 @@ export const Process: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 border-y border-stone-200/50 bg-brand-sand/30 backdrop-blur-[2px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="pt-24 pb-32 bg-brand-sand/30 backdrop-blur-[2px] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-brand-darkBlue">
             How Your Support Makes Education Possible
@@ -68,6 +68,22 @@ export const Process: React.FC = () => {
             <StepCard key={index} {...step} isLast={index === steps.length - 1} />
           ))}
         </div>
+      </div>
+
+      {/* Curved Separator at the bottom - Cutting back to Global BG color */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
+        <svg 
+          className="relative block w-full h-[50px] md:h-[80px]" 
+          data-name="Layer 1" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1440 120" 
+          preserveAspectRatio="none"
+        >
+          <path 
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L0,320Z" 
+            className="fill-[#FFFBF2]"
+          ></path>
+        </svg>
       </div>
     </section>
   );
