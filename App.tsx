@@ -13,6 +13,7 @@ import { Donation } from './components/Donation';
 import { Footer } from './components/Footer';
 import { BackToTop } from './components/BackToTop';
 import { Volunteer } from './components/Volunteer';
+import { PageHeader } from './components/PageHeader';
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
@@ -25,70 +26,111 @@ const ScrollToTop = () => {
   return null;
 };
 
+// -- PAGE LAYOUT WRAPPER --
+interface PageLayoutProps {
+  title: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}
+
+const PageLayout: React.FC<PageLayoutProps> = ({ title, subtitle, children }) => (
+  <>
+    <PageHeader title={title} subtitle={subtitle} />
+    <div className="min-h-[50vh]">
+      {children}
+    </div>
+  </>
+);
+
 // -- PAGE COMPONENTS --
 
-// Homepage: Simplified to serve as a landing page
+// Homepage: Landing page structure
 const HomePage = () => (
   <>
     <Hero />
-    <Features /> {/* kept as "Programs Overview" */}
-    <Process />  {/* kept as "How it Works" */}
+    <Features /> 
+    <Process />
     <Donation />
   </>
 );
 
-// Standalone Pages
+// Standalone Pages with PageHeader
 const AboutPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="About Us" 
+    subtitle="Our mission is to dismantle barriers to learning and create safe pathways for academic and personal growth for women in Afghanistan."
+  >
     <Mission />
-  </div>
+  </PageLayout>
 );
 
 const TeamPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Our Team" 
+    subtitle="Meet the dedicated individuals working tirelessly to ensure education remains accessible to all."
+  >
     <Team />
-  </div>
+  </PageLayout>
 );
 
 const ProgramsPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Our Programs" 
+    subtitle="Secure, accessible, and community-driven educational initiatives designed for challenging environments."
+  >
     <Features />
     <Process />
-  </div>
+  </PageLayout>
 );
 
 const GalleryPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Gallery" 
+    subtitle="Glimpses into the daily impact of our programs and the resilient spirit of our students."
+  >
     <Gallery />
-  </div>
+  </PageLayout>
 );
 
 const ImpactPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Our Impact" 
+    subtitle="Real stories of determination and the tangible difference your support makes."
+  >
     <Testimonial />
-  </div>
+  </PageLayout>
 );
 
 const FAQPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Frequently Asked Questions" 
+    subtitle="Learn more about our operations, safety protocols, and how you can get involved."
+  >
     <FAQ />
-  </div>
+  </PageLayout>
 );
 
 const VolunteerPage = () => (
-  <div className="pt-20 min-h-[60vh]">
+  <PageLayout 
+    title="Volunteer" 
+    subtitle="Join our mission. Your time, skills, and passion can help change lives."
+  >
     <Volunteer />
-  </div>
+  </PageLayout>
 );
 
 const ContactPage = () => (
-  <div className="py-32 max-w-7xl mx-auto px-4 text-center min-h-[60vh]">
-    <h1 className="text-4xl font-serif font-bold text-brand-darkBlue mb-6">Get in Touch</h1>
-    <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
-      We are always here to answer your questions and discuss how you can help. 
-      Please check the footer below for our contact details, location, and office hours.
-    </p>
-  </div>
+  <PageLayout 
+    title="Contact Us" 
+    subtitle="We are here to answer your questions. Reach out to learn more about how you can support women's education."
+  >
+    <div className="py-20 max-w-7xl mx-auto px-4 text-center">
+      <h2 className="text-3xl font-serif font-bold text-brand-darkBlue mb-6">Get in Touch</h2>
+      <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
+        Check our footer for location details, email, and phone number. We look forward to hearing from you.
+      </p>
+    </div>
+  </PageLayout>
 );
 
 const App: React.FC = () => {

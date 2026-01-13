@@ -4,16 +4,13 @@ import { Button } from './Button';
 
 export const Volunteer: React.FC = () => {
   return (
-    <section className="py-20 min-h-screen">
+    <section className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
+        {/* Intro text only, removed big H1 */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-brand-darkBlue mb-6">
-            Join Our Mission
-          </h1>
           <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-            Your time and skills can change lives. We are looking for passionate individuals to help us empower women through education.
+            We are looking for passionate individuals to help us empower women through education. Explore the roles below and find where you fit in.
           </p>
         </div>
 
