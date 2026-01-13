@@ -9,11 +9,12 @@ interface TeamMemberProps {
 
 const TeamMember: React.FC<TeamMemberProps> = ({ name, role, bio, image }) => (
   <div className="group text-center flex flex-col items-center h-full">
-    <div className="relative mb-6 w-40 h-40 overflow-hidden rounded-full border-4 border-white/60 shadow-lg bg-brand-sand/30">
+    {/* Changed background from bg-brand-sand/30 to bg-brand-teal/5 for a cooler, cleaner look matching the logo color */}
+    <div className="relative mb-6 w-40 h-40 overflow-hidden rounded-full border-4 border-white/60 shadow-lg bg-brand-teal/5">
       <img 
         src={image} 
         alt={name} 
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 bg-white/50"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
     </div>
     <h3 className="text-xl font-serif font-bold text-brand-darkBlue mb-1">{name}</h3>

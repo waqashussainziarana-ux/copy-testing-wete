@@ -47,12 +47,12 @@ export const Hero: React.FC = () => {
           {/* Illustration / Image Area */}
           <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
             {/* 
-                Mobile: w-[150%] -ml-[25%] -> Large on mobile
-                Tablet (sm): w-full max-w-xl -> Reset to contained
-                Desktop (lg): w-[110%] -mr-[5%] -> Reduced slightly to fix proportion
-                XL: w-[120%] -mr-[10%] -> Reduced slightly
+                Mobile: w-[150%] -ml-[25%] -> Large on mobile (unchanged)
+                Tablet (sm): w-full max-w-xl -> Contained
+                Desktop (lg): w-[90%] mr-0 -> Reduced to fit column nicely
+                XL: w-[100%] mr-0 -> Reduced to fit column exactly
             */}
-            <div className="relative w-[150%] -ml-[25%] sm:w-full sm:ml-0 sm:max-w-xl lg:max-w-none lg:w-[110%] lg:-mr-[5%] xl:w-[120%] xl:-mr-[10%] transition-all duration-500">
+            <div className="relative w-[150%] -ml-[25%] sm:w-full sm:ml-0 sm:max-w-xl lg:max-w-none lg:w-[90%] lg:mr-0 xl:w-[100%] xl:mr-0 transition-all duration-500">
                 <img 
                   src="https://wete.ca/wp-content/uploads/2026/01/ChatGPT-Image-Jan-13-2026-04_44_15-PM.png" 
                   alt="Afghan women reading illustration" 
