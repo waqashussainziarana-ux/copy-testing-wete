@@ -8,9 +8,9 @@ export const Mission: React.FC = () => {
           <div className="order-2 lg:order-1 relative group">
              <div className="absolute inset-0 bg-brand-teal transform translate-x-4 translate-y-4 rounded-lg -z-10 opacity-20 transition-transform duration-300 group-hover:translate-x-6 group-hover:translate-y-6"></div>
              <img 
-               src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1973&auto=format&fit=crop" 
-               alt="Women learning" 
-               className="rounded-lg shadow-xl w-full h-auto object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+               src="https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg" 
+               alt="Afghan Girl" 
+               className="rounded-lg shadow-xl w-full h-auto object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-500"
              />
           </div>
           
