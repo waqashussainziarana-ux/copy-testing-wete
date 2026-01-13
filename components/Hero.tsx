@@ -25,8 +25,8 @@ export const Hero: React.FC = () => {
           
           {/* Text Content */}
           <div className="space-y-6 text-center lg:text-left">
-            <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-darkBlue leading-[1.15]">
-              Education Is Her Right — <br />
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-darkBlue leading-tight">
+              Education Is Her Right <br />
               <span className="text-brand-darkBlue">Even When It Is Denied</span>
             </h1>
             
