@@ -46,7 +46,12 @@ export const Hero: React.FC = () => {
 
           {/* Illustration / Image Area */}
           <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
-            <div className="relative w-full max-w-lg">
+            {/* 
+                Mobile: w-[150%] -ml-[25%] -> Substantially larger (1.5x container) and centered ((150-100)/2 = 25% offset)
+                Tablet (sm): w-full max-w-xl -> Reset to contained but large
+                Desktop (lg): w-[130%] -mr-[15%] -> Substantial overflow to right
+            */}
+            <div className="relative w-[150%] -ml-[25%] sm:w-full sm:ml-0 sm:max-w-xl lg:max-w-none lg:w-[130%] lg:-mr-[15%] xl:w-[140%] xl:-mr-[20%] transition-all duration-500">
                 <img 
                   src="https://wete.ca/wp-content/uploads/2026/01/ChatGPT-Image-Jan-13-2026-04_44_15-PM.png" 
                   alt="Afghan women reading illustration" 
