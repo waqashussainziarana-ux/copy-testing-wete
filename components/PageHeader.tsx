@@ -9,10 +9,7 @@ interface PageHeaderProps {
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
   return (
-    <div className="bg-[#FFFBF2] pt-32 pb-24 relative overflow-hidden">
-       {/* Subtle overlay to distinguish from body bg slightly if needed, or keep transparent */}
-      <div className="absolute inset-0 bg-brand-sand/20 pointer-events-none"></div>
-
+    <div className="bg-[#F2EFE5] pt-32 pb-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <nav className="flex items-center text-sm text-stone-500 mb-4" aria-label="Breadcrumb">
            <Link to="/" className="hover:text-brand-darkBlue flex items-center gap-1 transition-colors">
@@ -43,7 +40,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ title, subtitle }) => {
         >
           <path 
             d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L0,320Z" 
-            className="fill-white/40"
+            className="fill-[#FFFBF2]"
           ></path>
         </svg>
       </div>
