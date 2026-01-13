@@ -1,13 +1,26 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from './Button';
 
 export const Hero: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const handleDonate = () => {
     window.open("https://gofund.me/5233f0ce", "_blank");
   };
 
   const handleLearnMore = () => {
-    window.location.href = "#contact";
+    // If on homepage, scroll to programs section
+    if (location.pathname === '/') {
+      const element = document.getElementById('programs');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on dedicated page, navigate to programs page
+      navigate('/programs');
+    }
   };
 
   return (
