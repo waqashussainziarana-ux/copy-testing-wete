@@ -4,7 +4,23 @@ import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-[#F9F5EB]/90 backdrop-blur-sm border-t border-stone-200/50 pt-16 pb-8">
+    <footer id="contact" className="bg-[#F9F5EB]/90 backdrop-blur-sm pt-12 pb-8 relative mt-24">
+       {/* Curved Separator at the TOP */}
+       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 -translate-y-full">
+         <svg 
+            className="relative block w-full h-[40px] md:h-[70px]" 
+            data-name="Layer 1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 1440 120" 
+            preserveAspectRatio="none"
+         >
+            <path 
+              d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L0,320Z" 
+              fill="rgba(249, 245, 235, 0.9)"
+            ></path>
+         </svg>
+       </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
