@@ -27,23 +27,17 @@ const ScrollToTop = () => {
 
 // -- PAGE COMPONENTS --
 
-// Homepage: Contains ALL sections for the single-page scroll experience
+// Homepage: Simplified to serve as a landing page
 const HomePage = () => (
   <>
     <Hero />
-    <Mission />
-    <Team />
-    <Features />
-    <Gallery />
-    <Process />
-    <Testimonial />
-    <FAQ />
+    <Features /> {/* kept as "Programs Overview" */}
+    <Process />  {/* kept as "How it Works" */}
     <Donation />
   </>
 );
 
-// Standalone Pages: Render only specific content without the full homepage scroll
-// "pt-20" adds padding top to prevent the sticky navbar from covering content
+// Standalone Pages
 const AboutPage = () => (
   <div className="pt-20 min-h-[60vh]">
     <Mission />

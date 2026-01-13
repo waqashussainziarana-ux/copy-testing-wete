@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Gallery: React.FC = () => {
   const images = [
@@ -30,9 +31,9 @@ export const Gallery: React.FC = () => {
             </h2>
             <p className="text-stone-600">Glimpses into the daily impact of our programs for Afghan girls.</p>
           </div>
-          <a href="#contact" className="text-brand-teal font-medium hover:text-brand-darkBlue transition-colors flex items-center gap-1">
+          <Link to="/contact" className="text-brand-teal font-medium hover:text-brand-darkBlue transition-colors flex items-center gap-1">
             Contact &rarr;
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

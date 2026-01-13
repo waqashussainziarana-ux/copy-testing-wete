@@ -8,17 +8,17 @@ export const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Navigation Items with their Route path and Home section ID
+  // Navigation Items - Pure routing, no scroll IDs
   const navItems = [
-    { label: 'Home', path: '/', sectionId: 'top' },
-    { label: 'About Us', path: '/about', sectionId: 'about' },
-    { label: 'Our Team', path: '/team', sectionId: 'team' },
-    { label: 'Programs', path: '/programs', sectionId: 'programs' },
-    { label: 'Volunteer', path: '/volunteer', sectionId: 'volunteer' },
-    { label: 'Gallery', path: '/gallery', sectionId: 'gallery' },
-    { label: 'Impact', path: '/impact', sectionId: 'impact' },
-    { label: 'FAQ', path: '/faq', sectionId: 'faq' },
-    { label: 'Contact', path: '/contact', sectionId: 'contact' },
+    { label: 'Home', path: '/' },
+    { label: 'About Us', path: '/about' },
+    { label: 'Our Team', path: '/team' },
+    { label: 'Programs', path: '/programs' },
+    { label: 'Volunteer', path: '/volunteer' },
+    { label: 'Gallery', path: '/gallery' },
+    { label: 'Impact', path: '/impact' },
+    { label: 'FAQ', path: '/faq' },
+    { label: 'Contact', path: '/contact' },
   ];
 
   const handleDonate = () => {
@@ -28,26 +28,13 @@ export const Navbar: React.FC = () => {
   const handleNavClick = (e: React.MouseEvent, item: typeof navItems[0]) => {
     e.preventDefault();
     setIsOpen(false);
-
-    const isHomepage = location.pathname === '/';
-
-    if (isHomepage) {
-      // 1. If on Homepage, try smooth scrolling first (Hybrid behavior)
-      // This maintains the "Single Page" feel for the homepage
-      if (item.path === '/') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        const element = document.getElementById(item.sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          // If section not found (or if it's a separate page like Volunteer), navigate
-          navigate(item.path);
-        }
-      }
+    
+    // Always navigate to the route. 
+    // This effectively disables the "One Page" scroll behavior.
+    if (location.pathname === item.path) {
+      // If already on the page, just scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // 2. If on any other page, navigate to the dedicated route
-      // This satisfies the requirement for "separate pages"
       navigate(item.path);
     }
   };
