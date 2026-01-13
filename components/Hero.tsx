@@ -57,8 +57,21 @@ export const Hero: React.FC = () => {
         </div>
       </div>
       
-      {/* Smooth Transition to next section - reduced opacity to blend with global bg */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#F9F5EB]/50 to-transparent"></div>
+      {/* Curved Separator at the bottom */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+        <svg 
+          className="relative block w-full h-[50px] md:h-[100px]" 
+          data-name="Layer 1" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1440 120" 
+          preserveAspectRatio="none"
+        >
+          <path 
+            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L0,320Z" 
+            className="fill-white/30"
+          ></path>
+        </svg>
+      </div>
     </section>
   );
 };
