@@ -14,6 +14,7 @@ import { Footer } from './components/Footer';
 import { BackToTop } from './components/BackToTop';
 import { Volunteer } from './components/Volunteer';
 import { PageHeader } from './components/PageHeader';
+import { Contact } from './components/Contact';
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
@@ -124,12 +125,7 @@ const ContactPage = () => (
     title="Contact Us" 
     subtitle="We are here to answer your questions. Reach out to learn more about how you can support women's education."
   >
-    <div className="py-20 max-w-7xl mx-auto px-4 text-center">
-      <h2 className="text-3xl font-serif font-bold text-brand-darkBlue mb-6">Get in Touch</h2>
-      <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
-        Check our footer for location details, email, and phone number. We look forward to hearing from you.
-      </p>
-    </div>
+    <Contact />
   </PageLayout>
 );
 
