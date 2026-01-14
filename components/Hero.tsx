@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
                 Donate Now
               </Button>
               <Button variant="secondary" className="text-lg px-8 py-3 shadow-lg" onClick={handleLearnMore}>
-                Learn How We Help
+                Our First Project
               </Button>
             </div>
           </div>
