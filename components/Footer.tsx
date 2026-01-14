@@ -86,9 +86,16 @@ export const Footer: React.FC = () => {
            </div>
         </div>
 
-        <div className="border-t border-stone-200 pt-8 text-center text-xs text-stone-500">
-          <p>&copy; {new Date().getFullYear()} Women's Empowerment through Education (WETE). All rights reserved.</p>
-          <p className="mt-2">Registered nonprofit. Programs operate with strict confidentiality to ensure safety.</p>
+        <div className="border-t border-stone-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-stone-500 gap-4">
+          <div className="text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} Women's Empowerment through Education (WETE). All rights reserved.</p>
+            <p className="mt-1">Registered nonprofit. Programs operate with strict confidentiality to ensure safety.</p>
+          </div>
+          <div className="flex gap-4">
+            <Link to="/privacy-policy" className="hover:text-brand-darkBlue">Privacy Policy</Link>
+            <Link to="/cookie-policy" className="hover:text-brand-darkBlue">Cookie Policy</Link>
+            <Link to="/terms-and-conditions" className="hover:text-brand-darkBlue">Terms & Conditions</Link>
+          </div>
         </div>
       </div>
     </footer>

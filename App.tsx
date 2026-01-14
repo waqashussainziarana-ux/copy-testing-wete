@@ -15,6 +15,20 @@ import { BackToTop } from './components/BackToTop';
 import { Volunteer } from './components/Volunteer';
 import { PageHeader } from './components/PageHeader';
 import { Contact } from './components/Contact';
+import { 
+  MissionStatement, 
+  Vision, 
+  WhoWeAre, 
+  RegistrationStatus,
+  OurFirstProject,
+  Funding,
+  BecomeDonor,
+  MailDonations,
+  NetworkWhoWeAre,
+  PrivacyPolicy,
+  CookiePolicy,
+  TermsConditions
+} from './components/SubPages';
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
@@ -147,6 +161,75 @@ const App: React.FC = () => {
             <Route path="/volunteer" element={<VolunteerPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
+
+            {/* About Us Sub-pages */}
+            <Route path="/about/mission-statement" element={
+              <PageLayout title="Mission Statement">
+                <MissionStatement />
+              </PageLayout>
+            } />
+            <Route path="/about/vision" element={
+              <PageLayout title="Our Vision">
+                <Vision />
+              </PageLayout>
+            } />
+            <Route path="/about/who-we-are" element={
+              <PageLayout title="Who We Are">
+                <WhoWeAre />
+              </PageLayout>
+            } />
+            <Route path="/about/registration-status" element={
+              <PageLayout title="Registration Status">
+                <RegistrationStatus />
+              </PageLayout>
+            } />
+
+            {/* Programs Sub-pages */}
+            <Route path="/programs/our-first-project" element={
+              <PageLayout title="Our First Project" subtitle="Literacy for All">
+                <OurFirstProject />
+              </PageLayout>
+            } />
+            <Route path="/programs/funding" element={
+              <PageLayout title="Funding">
+                <Funding />
+              </PageLayout>
+            } />
+            <Route path="/programs/how-to-become-a-donor" element={
+              <PageLayout title="Become a Donor">
+                <BecomeDonor />
+              </PageLayout>
+            } />
+            <Route path="/programs/mail-donations" element={
+              <PageLayout title="Mail Donations">
+                <MailDonations />
+              </PageLayout>
+            } />
+
+            {/* Network Sub-pages */}
+            <Route path="/network/who-are-we" element={
+              <PageLayout title="Our Network">
+                <NetworkWhoWeAre />
+              </PageLayout>
+            } />
+
+            {/* Legal Pages */}
+            <Route path="/privacy-policy" element={
+              <PageLayout title="Privacy Policy">
+                <PrivacyPolicy />
+              </PageLayout>
+            } />
+            <Route path="/cookie-policy" element={
+              <PageLayout title="Cookie Policy">
+                <CookiePolicy />
+              </PageLayout>
+            } />
+            <Route path="/terms-and-conditions" element={
+              <PageLayout title="Terms and Conditions">
+                <TermsConditions />
+              </PageLayout>
+            } />
+
           </Routes>
         </main>
         
