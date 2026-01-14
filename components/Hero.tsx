@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
   };
 
   const handleLearnMore = () => {
-    navigate('/programs');
+    navigate('/programs/our-first-project');
   };
 
   return (
