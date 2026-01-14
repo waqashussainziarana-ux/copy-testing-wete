@@ -14,10 +14,9 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-12 pb-32 lg:pt-24 lg:pb-48 overflow-hidden">
+    <section className="relative pt-12 pb-32 lg:pt-28 lg:pb-48 overflow-hidden">
       {/* 
-         NOTE: Local background hills removed. 
-         Now using the global fixed desert background from index.html 
+         NOTE: Global fixed desert background is visible behind this section.
       */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,21 +43,38 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Illustration / Image Area */}
-          <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
-            {/* 
-                Mobile: w-[150%] -ml-[25%] -> Large on mobile (unchanged)
-                Tablet (sm): w-full max-w-xl -> Contained
-                Desktop (lg): w-[90%] mr-0 -> Reduced to fit column nicely
-                XL: w-[100%] mr-0 -> Reduced to fit column exactly
-            */}
-            <div className="relative w-[150%] -ml-[25%] sm:w-full sm:ml-0 sm:max-w-xl lg:max-w-none lg:w-[90%] lg:mr-0 xl:w-[100%] xl:mr-0 transition-all duration-500">
-                <img 
-                  src="https://wete.ca/wp-content/uploads/2026/01/ChatGPT-Image-Jan-13-2026-04_44_15-PM.png" 
-                  alt="Afghan women reading illustration" 
-                  className="w-full h-auto object-contain drop-shadow-2xl rounded-xl"
-                />
-            </div>
+          {/* Image Area */}
+          <div className="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
+             {/* 
+                New Image Layout: Arched Portrait 
+                Replaces the previous 'scarves girls' illustration.
+                Styled with an arch (rounded-t-full) to evoke Islamic architecture/windows 
+                and blend better with the portrait aspect ratio.
+             */}
+             <div className="relative w-64 sm:w-80 lg:w-[26rem] xl:w-[30rem] mx-auto lg:mr-0 transition-all duration-500">
+                  
+                  {/* Decorative Background Blobs for blending */}
+                  <div className="absolute -inset-4 bg-brand-sand/60 rounded-t-[12rem] rounded-b-3xl blur-md -z-10 transform rotate-3 scale-105"></div>
+                  <div className="absolute -inset-4 bg-brand-teal/20 rounded-t-[12rem] rounded-b-3xl blur-md -z-10 transform -rotate-2 scale-105"></div>
+
+                  {/* Main Image Container */}
+                  <div className="relative rounded-t-[12rem] rounded-b-3xl overflow-hidden shadow-2xl border-[6px] border-white/90 group">
+                      <img 
+                        src="https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg" 
+                        alt="Afghan Girl - Sharbat Gula" 
+                        className="w-full h-auto object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[2s]"
+                      />
+                      
+                      {/* Overlays to blend with the site theme */}
+                      <div className="absolute inset-0 bg-brand-darkBlue/10 mix-blend-overlay"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-darkBlue/50 via-transparent to-transparent opacity-80"></div>
+                      
+                      {/* Texture overlay */}
+                      <div className="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay" 
+                           style={{ backgroundImage: `url("https://www.transparenttextures.com/patterns/cream-paper.png")` }}>
+                      </div>
+                  </div>
+             </div>
           </div>
         </div>
       </div>
