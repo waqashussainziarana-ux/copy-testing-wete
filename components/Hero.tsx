@@ -22,8 +22,8 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
-          {/* Text Content */}
-          <div className="space-y-6 text-center lg:text-left">
+          {/* Text Content - Order 2 on mobile (bottom), Order 1 on desktop (left) */}
+          <div className="space-y-6 text-center lg:text-left order-2 lg:order-1">
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-darkBlue leading-tight">
               Education Is Her Right <br />
               <span className="text-brand-darkBlue">Even When It Is Denied</span>
@@ -43,8 +43,8 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Image Area */}
-          <div className="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
+          {/* Image Area - Order 1 on mobile (top), Order 2 on desktop (right) */}
+          <div className="relative flex justify-center lg:justify-end lg:mt-0 order-1 lg:order-2">
              {/* 
                 New Image Layout: Arched Portrait 
                 Replaces the previous 'scarves girls' illustration.
