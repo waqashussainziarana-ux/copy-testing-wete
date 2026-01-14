@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 export const Gallery: React.FC = () => {
   const images = [
     {
-      src: "https://wete.ca/wp-content/uploads/2021/05/IMG_6435-3-scaled.jpg",
+      src: "https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6435-3-scaled-1.jpg",
       caption: "Learning in every environment"
     },
     {
-      src: "https://wete.ca/wp-content/uploads/2021/05/IMG_6448-2-scaled.jpg",
+      src: "https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6448-2-scaled-1.jpg",
       caption: "A future built on books"
     },
     {
-      src: "https://wete.ca/wp-content/uploads/2021/05/IMG_6484-2-1-scaled.jpg",
+      src: "https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6484-2-1-scaled-1.jpg",
       caption: "The power of the written word"
     },
     {
-      src: "https://wete.ca/wp-content/uploads/2021/05/IMG_6457-2-1-scaled.jpg",
+      src: "https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6457-2-1024x603-1.jpg",
       caption: "Community and collaboration"
     }
   ];

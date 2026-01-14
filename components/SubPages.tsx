@@ -68,7 +68,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2022/06/unnamed.png" 
+          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/Add-this-image-after-the-paragraph-starting-from-22The-First-Two-phases.png" 
           alt="Project Structure Phases" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
@@ -110,7 +110,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2022/06/unnamed-1.png" 
+          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/unnamed-1-1.png" 
           alt="Annual Costs Table" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
