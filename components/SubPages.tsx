@@ -181,14 +181,14 @@ export const Funding: React.FC = () => (
 
 export const BecomeDonor: React.FC = () => (
   <div className="max-w-3xl mx-auto px-4 py-12">
-    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Become a Donor</h3>
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Donate with GoFundMe</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed">
       <p>
         Your support changes lives. By becoming a donor, you are directly contributing to the education and empowerment of women in Afghanistan.
       </p>
-      <div className="mt-8 p-6 bg-brand-sand/30 rounded-lg border border-brand-teal/20 text-center">
+      <div className="mt-8 p-6 bg-brand-sand/30 rounded-lg border border-brand-teal/20 text-center flex flex-col items-center">
         <p className="mb-4 font-medium">Donate securely online through our partner platform:</p>
-        <Button onClick={() => window.open("https://gofund.me/5233f0ce", "_blank")}>
+        <Button onClick={() => window.open("https://gofund.me/5233f0ce", "_blank")} className="mx-auto">
           Donate via GoFundMe
         </Button>
       </div>

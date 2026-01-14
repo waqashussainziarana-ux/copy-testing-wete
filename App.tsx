@@ -197,7 +197,7 @@ const App: React.FC = () => {
               </PageLayout>
             } />
             <Route path="/programs/how-to-become-a-donor" element={
-              <PageLayout title="Become a Donor">
+              <PageLayout title="Donate with GoFundMe">
                 <BecomeDonor />
               </PageLayout>
             } />
