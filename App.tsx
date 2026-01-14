@@ -23,6 +23,7 @@ import {
   OurFirstProject,
   Funding,
   BecomeDonor,
+  PaypalDonation,
   MailDonations,
   NetworkWhoWeAre,
   PrivacyPolicy,
@@ -198,6 +199,11 @@ const App: React.FC = () => {
             <Route path="/programs/how-to-become-a-donor" element={
               <PageLayout title="Become a Donor">
                 <BecomeDonor />
+              </PageLayout>
+            } />
+            <Route path="/programs/paypal-donation" element={
+              <PageLayout title="PayPal Donation">
+                <PaypalDonation />
               </PageLayout>
             } />
             <Route path="/programs/mail-donations" element={

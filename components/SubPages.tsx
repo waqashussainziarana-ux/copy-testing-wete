@@ -205,6 +205,43 @@ export const BecomeDonor: React.FC = () => (
   </div>
 );
 
+export const PaypalDonation: React.FC = () => (
+  <div className="max-w-3xl mx-auto px-4 py-12">
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Donate via PayPal</h3>
+    <div className="prose prose-lg text-stone-600 leading-relaxed">
+      <p>
+        We appreciate your support. You can make a secure donation directly through our PayPal link. Every contribution, no matter the size, helps us continue our mission of empowering women through education.
+      </p>
+      
+      <div className="mt-8 p-8 bg-white border border-stone-200 rounded-xl shadow-sm text-center flex flex-col items-center">
+        {/* PayPal Logo Area */}
+        <div className="mb-6 w-32">
+           <img 
+             src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" 
+             alt="PayPal Logo" 
+             className="w-full h-auto"
+           />
+        </div>
+        
+        <p className="mb-8 font-medium text-lg text-stone-700">
+          Fast, easy, and secure payments.
+        </p>
+        
+        <Button 
+          onClick={() => window.open("https://www.paypal.com/paypalme/wete2021", "_blank")}
+          className="bg-[#003087] hover:bg-[#002568] text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+        >
+          <span>Donate Now</span>
+        </Button>
+        
+        <p className="mt-4 text-xs text-stone-400">
+          You will be redirected to PayPal to complete your transaction.
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 export const MailDonations: React.FC = () => (
   <div className="max-w-3xl mx-auto px-4 py-12">
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Mail Donations</h3>
