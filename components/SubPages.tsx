@@ -8,10 +8,7 @@ export const MissionStatement: React.FC = () => (
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Our Mission</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed">
       <p>
-        Women's Empowerment Through Education (WETE) is dedicated to providing accessible, safe, and quality education to women and girls who have been denied their fundamental right to learn.
-      </p>
-      <p>
-        Our mission is to dismantle barriers to learning and create safe pathways for academic and personal growth. We believe that by equipping women with knowledge and skills, we not only transform individual lives but uplift entire communities.
+        Our mission is to broaden the educational and professional horizons for women around the world so that they can better pursue their dreams and contribute equally to the growth and development of our society.
       </p>
     </div>
   </div>
@@ -21,11 +18,8 @@ export const Vision: React.FC = () => (
   <div className="max-w-3xl mx-auto px-4 py-12 text-center sm:text-left">
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Our Vision</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed">
-      <p className="text-xl font-medium text-brand-teal mb-8">
-        "A world where every woman has the agency to shape her own future through education."
-      </p>
       <p>
-        We envision a society where knowledge is accessible to all, regardless of gender or geography. We strive for a future where Afghan women can participate fully in society, contribute to the economy, and lead with confidence.
+        We believe that access to primary education will help women address challenges pertaining to economic prosperity, physical security, healthcare, and social equality. Our initial focus will be women in Afghanistan, but we reserve the prospects to broaden our influence to other developing countries with time. We believe that educated women will prove to be the key ingredient in the revitalization of the underdeveloped world.
       </p>
     </div>
   </div>
@@ -36,10 +30,7 @@ export const WhoWeAre: React.FC = () => (
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Who We Are</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed">
       <p>
-        WETE is a collective of educators, activists, and community organizers united by a shared belief in the transformative power of education. Based in Canada, we work directly with trusted partners on the ground to deliver impact where it is needed most.
-      </p>
-      <p>
-        We operate with transparency, integrity, and an unwavering commitment to the safety of our students and staff.
+        Women Empowerment Through Education (WETE) is a Toronto-based non-profit organization that provides educational opportunities for women in poor communities. Our institution targets smaller villages all across the globe since these communities often lack the basic resources needed to operate schools, academies, or other educational facilities.
       </p>
     </div>
   </div>
@@ -50,7 +41,7 @@ export const RegistrationStatus: React.FC = () => (
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Legal Status</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed bg-white/50 p-8 rounded-lg border border-stone-200">
       <p className="mb-4">
-        Women's Empowerment Through Education (WETE) is a registered Non-Profit Organization in Canada. We comply with all Canadian regulations regarding non-profit governance and financial transparency.
+        WETE is a registered Non-Profit organization in Canada. Our mission is to increase literacy among women in Afghanistan. We believe that Afghan women can better address the poverty and violence that limit their lives if they first gain access to a broader world of ideas.
       </p>
       <div className="inline-block bg-brand-sand/50 px-6 py-3 rounded-md border border-brand-accent/30">
         <span className="font-bold text-brand-darkBlue">Registration Number:</span> 
