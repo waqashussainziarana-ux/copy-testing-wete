@@ -57,15 +57,19 @@ export const Navbar: React.FC = () => {
   };
 
   const handleNavClick = (e: React.MouseEvent, item: NavItem) => {
-    if (item.children) {
-        // For desktop parent items with children, we might want to allow clicking to go to the parent page
-        // or prevent default if it's just a dropdown trigger.
-        // Here we allow navigation if path is distinct.
-        if (item.path === '#') e.preventDefault();
-    }
+    // CRITICAL FIX: Prevent default browser navigation (full reload) 
+    // to allow React Router to handle the routing via hash.
+    e.preventDefault();
     
+    // Toggle mobile menu if open
     setIsOpen(false);
-    if (item.path && item.path !== '#') {
+
+    if (item.path) {
+       if (item.path === '#') {
+         // Do nothing for placeholder links
+         return;
+       }
+       
        if (location.pathname === item.path) {
          window.scrollTo({ top: 0, behavior: 'smooth' });
        } else {
@@ -103,10 +107,7 @@ export const Navbar: React.FC = () => {
               <div key={item.label} className="relative group">
                 <a 
                   href={item.path}
-                  onClick={(e) => {
-                      if(item.children && item.path === '#') e.preventDefault();
-                      else handleNavClick(e, item);
-                  }}
+                  onClick={(e) => handleNavClick(e, item)}
                   className={`flex items-center gap-1 px-3 py-2 rounded-md text-stone-600 hover:text-brand-darkBlue hover:bg-stone-100 font-medium text-sm uppercase tracking-wider transition-all cursor-pointer ${
                     location.pathname.startsWith(item.path) && item.path !== '/' ? 'text-brand-teal font-bold bg-brand-teal/5' : ''
                   } ${location.pathname === '/' && item.path === '/' ? 'text-brand-teal font-bold' : ''}`}
@@ -184,14 +185,7 @@ export const Navbar: React.FC = () => {
                 <div className="flex items-center justify-between border-b border-stone-100 last:border-0">
                   <a
                     href={item.path}
-                    onClick={(e) => {
-                        if(!item.children) handleNavClick(e, item);
-                        else {
-                            // If it has children, clicking the main link toggles expand for UX or goes to page?
-                            // Let's go to page if clicked on text, toggle if clicked on arrow.
-                            handleNavClick(e, item);
-                        }
-                    }}
+                    onClick={(e) => handleNavClick(e, item)}
                     className={`flex-grow py-4 text-lg font-medium cursor-pointer ${
                       location.pathname === item.path 
                         ? 'text-brand-teal' 
