@@ -25,7 +25,6 @@ import {
   BecomeDonor,
   PaypalDonation,
   MailDonations,
-  NetworkWhoWeAre,
   PrivacyPolicy,
   CookiePolicy,
   TermsConditions
@@ -212,12 +211,7 @@ const App: React.FC = () => {
               </PageLayout>
             } />
 
-            {/* Network Sub-pages */}
-            <Route path="/network/who-are-we" element={
-              <PageLayout title="Our Network">
-                <NetworkWhoWeAre />
-              </PageLayout>
-            } />
+            {/* Network Sub-pages route removed */}
 
             {/* Legal Pages */}
             <Route path="/privacy-policy" element={

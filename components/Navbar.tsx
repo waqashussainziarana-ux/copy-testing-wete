@@ -41,9 +41,8 @@ export const Navbar: React.FC = () => {
     },
     { 
       label: 'Network', 
-      path: '/network/who-are-we',
+      path: '/volunteer',
       children: [
-        { label: 'Who Are We', path: '/network/who-are-we' },
         { label: 'Become a Volunteer', path: '/volunteer' },
       ]
     },
