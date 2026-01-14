@@ -64,165 +64,243 @@ export const RegistrationStatus: React.FC = () => (
 
 export const OurFirstProject: React.FC = () => (
   <div className="max-w-4xl mx-auto px-4 py-12">
-    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Project: Literacy for All</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div className="prose text-stone-600 leading-relaxed">
-        <p className="mb-4">
-          Our inaugural initiative focuses on providing basic literacy and numeracy education to girls in rural provinces who currently have no access to formal schooling.
-        </p>
-        <p>
-          Utilizing safe, home-based classrooms, we connect students with qualified female teachers. The curriculum includes reading, writing, basic mathematics, and critical thinking skills.
-        </p>
-        <ul className="list-disc pl-5 space-y-2 mt-4 text-brand-darkBlue">
-          <li>Safe, home-based learning environments</li>
-          <li>Qualified female educators</li>
-          <li>Provided learning materials (books, stationery)</li>
-        </ul>
+    <h3 className="text-3xl font-serif font-bold text-brand-darkBlue mb-8">Projects</h3>
+    
+    <div className="prose prose-lg text-stone-600 leading-relaxed max-w-none">
+      <p className="mb-6">
+        To initiate our prophesy of educational development, we plan to establish and fund fully operated educational facilities in key areas of the developing world.
+      </p>
+      
+      <p className="mb-6">
+        Our operational strategy is organized in three main phases. These phases are created to provide a gradual growth of our reach and influence as we expand as an organization and establish a greater network.
+      </p>
+
+      <p className="mb-6">
+        The first two phases will focus on smaller villages in Afghanistan because that is where our management team has the most cultural knowledge and expertise. As our resources grow, however, we will direct our attention to other communities across the globe that lack the basic opportunities for primary education. This, however, will unfold in the third phase.
+      </p>
+
+      <div className="my-10">
+        <img 
+          src="https://wete.ca/wp-content/uploads/2021/05/Screen-Shot-2021-05-24-at-9.43.34-PM.png" 
+          alt="Project Structure Phases: Phase 1 (Jalalabad), Phase 2 (Other communities), Phase 3 (Global)" 
+          className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
+        />
       </div>
-      <div className="bg-brand-sand/30 p-6 rounded-xl border border-white">
-        <img src="https://wete.ca/wp-content/uploads/2021/05/IMG_6448-2-scaled.jpg" alt="Literacy Class" className="rounded-lg shadow-md mb-4 w-full h-48 object-cover" />
-        <p className="text-sm text-stone-500 italic text-center">Students engaging in reading exercises.</p>
+
+      <h4 className="text-xl font-bold text-brand-darkBlue mt-10 mb-4">Phase 1: Jalalabad, Afghanistan</h4>
+
+      <p className="mb-6">
+        Our first target is Jalalabad, Afghanistan, with an operational facility of: 1 unit manager, 1 legal consultant, 3 teachers, and 10 students. With success, this business model can be expanded to meet a higher demand of staff and students. With time, we can also acculturate this business model to meet the educational standards of other regions in the developing world. Our ultimate mission is to help spread access to primary education globally–specifically for women.
+      </p>
+
+      <div className="my-10">
+        <img 
+          src="https://wete.ca/wp-content/uploads/2021/05/IMG_6448-2-scaled.jpg" 
+          alt="Students in class" 
+          className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
+        />
       </div>
+
+      <p className="mb-6">
+        Jalalabad is the 5th largest city in Afghanistan, but despite its size, it still inhabits an array of smaller communities where educational opportunities are scarce. To better provide educational opportunities for women in this region, we will offer primary education for women aged 14-45 years old.
+      </p>
+
+      <p className="mb-6">
+        To combat cultural beliefs that dissuade women from pursuing educational careers, we will offer each student a monthly salary to compensate them for spending time in the educational facility. This will allow our female students to contribute financially to the household and, in turn, help support their families. With time, we hope this strategy will help persuade the Afghan patriarchy to realize the overwhelming benefits of empowering women in the workforce.
+      </p>
+
+      <p className="mb-6">
+        The students are expected to show up to class every day. In return, they will receive a stipend of $100/month for participation. This will entice greater interest for women to attend school in the region, and it will also provide an incentive for male citizens to support their female family members’ education. We will offer our students an educational facility, daily lectures, and a matriculated curriculum that will prepare them for prosperous lives in the Afghan society.
+      </p>
+
+      <p className="mb-6">
+        We already have a building with staff ready to start our educational operations once we receive sufficient funding. To fully operate this facility for 12-months we estimate that $50,000 is needed. This fund will consist of staff salaries, student salaries, operational fees, logistical resources, and academic supplies. A more detailed overview is provided in the table below.
+      </p>
+
+      <div className="my-10">
+        <img 
+          src="https://wete.ca/wp-content/uploads/2021/05/Screen-Shot-2021-05-24-at-9.52.27-PM.png" 
+          alt="Annual Costs Table" 
+          className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
+        />
+      </div>
+
+      <p className="mb-6">
+        The calculations gained from salaries and facility rentals are based on contracts and agreements settled with our staff members and landlords in Afghanistan. The calculations related to materials, transportation, and utilities are based on information gained by our staff and representatives who either spent their childhoods in Afghanistan or are currently living in the country. All calculations overestimate the total cost of operations to account for unforeseen overage. Our estimated cost of $40,960 is a conservative calculation so we predict that $50,000 will be sufficient funding to operate the facility for 12 months even if unforeseen challenges arise.
+      </p>
+
+      <h4 className="text-xl font-bold text-brand-darkBlue mt-10 mb-4">Projected Timeline:</h4>
+      
+      <ul className="list-none space-y-4 pl-0 mb-6">
+        <li className="pl-4 border-l-4 border-brand-teal">
+          <strong>By the summer of 2022</strong>, we will construct a formal curriculum plan that allows us to start offering primary education level classes to women in the local region while adhering to local labor/education laws.
+        </li>
+        <li className="pl-4 border-l-4 border-brand-teal">
+          <strong>By the fall of 2022</strong>, we hope to have enough revenue to operate independently via a steady flux of donations.
+        </li>
+        <li className="pl-4 border-l-4 border-brand-teal">
+          <strong>By the spring of 2023</strong>, we hope to have enough monetary resources to sign a renting contract with a landlord in Jalalabad, Afghanistan, and thus acquire a building that serves as an educational facility.
+        </li>
+        <li className="pl-4 border-l-4 border-brand-teal">
+          <strong>By the fall of 2023</strong>, our first class of 10 students will be enrolled in the education program and we will possess an on-site staff of 3 teachers, 1 legal affairs manager, and 1 facility manager.
+        </li>
+      </ul>
+
+      <p className="mb-6">
+        Our goal is to operate the Jalalabad unit successfully for at least two academic years before we engage in further growth. In these two years, we will make appropriate assessments in terms of growing our class size, but we will not increase the number of educational facilities before we have demonstrated sufficient and steady managerial operations of the Jalalabad unit.
+      </p>
+
+      <div className="my-10">
+        <img 
+          src="https://wete.ca/wp-content/uploads/2021/05/IMG_6435-3-scaled.jpg" 
+          alt="Writing exercises" 
+          className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
+        />
+      </div>
+
+      <h4 className="text-xl font-bold text-brand-darkBlue mt-10 mb-4">Phase 2: Other Communities in Afghanistan</h4>
+
+      <p className="mb-6">
+        If we can showcase sufficient and steady managerial operations of the Jalalabad unit for at least two consecutive years, we will acculturate our organizational operations to enter other communities in Afghanistan. We will utilize the systems, networks, and resources obtained since our conception to raise funds for additional educational facilities. We will again target poor communities in Afghanistan to provide even greater access to primary education in this region.
+      </p>
     </div>
   </div>
 );
 
 export const Funding: React.FC = () => (
-  <div className="max-w-3xl mx-auto px-4 py-12 text-center sm:text-left">
-    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">How We Are Funded</h3>
+  <div className="max-w-3xl mx-auto px-4 py-12">
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Funding & Transparency</h3>
     <div className="prose prose-lg text-stone-600 leading-relaxed">
       <p>
-        WETE relies entirely on the generosity of private individuals, international grants, and fundraising events. We do not receive government funding, allowing us to remain independent and agile in our operations.
+        WETE relies on the generous support of individuals, foundations, and corporate partners to fund our educational programs.
+        We are committed to financial transparency and accountability.
       </p>
-      <p>
-        <strong>Transparency Pledge:</strong> We are committed to ensuring that the maximum possible percentage of every donation goes directly to educational programs, teacher salaries, and student supplies.
+      <p className="mt-4">
+        Our funds are allocated primarily to:
       </p>
-    </div>
-  </div>
-);
-
-export const BecomeDonor: React.FC = () => {
-  const handleDonate = () => {
-    window.open("https://gofund.me/5233f0ce", "_blank");
-  };
-
-  return (
-    <div className="max-w-3xl mx-auto px-4 py-12 text-center">
-      <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Become a Donor</h3>
-      <p className="text-stone-600 mb-8 max-w-xl mx-auto">
-        Your consistent support is the lifeline of our programs. By becoming a monthly donor, you ensure that a girl in Afghanistan can continue her education without interruption.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button variant="donate" className="text-lg px-8 py-4" onClick={handleDonate}>
-          Donate Online
-        </Button>
-      </div>
-      <p className="text-sm text-stone-500 mt-6">
-        Tax receipts are issued for all eligible donations at the end of the fiscal year.
-      </p>
-    </div>
-  );
-};
-
-export const MailDonations: React.FC = () => (
-  <div className="max-w-3xl mx-auto px-4 py-12 text-center sm:text-left">
-    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Donate by Mail</h3>
-    <div className="bg-white p-8 rounded-xl shadow-sm border border-stone-200">
-      <p className="text-stone-600 mb-6">
-        We gratefully accept donations by cheque. Please make cheques payable to <strong>"Women's Empowerment Through Education"</strong> and mail them to our Canadian office:
-      </p>
-      <div className="bg-brand-sand/30 p-6 rounded-lg font-mono text-brand-darkBlue inline-block text-left">
-        <p>WETE</p>
-        <p>1000 Finch Ave West</p>
-        <p>North York, Ontario</p>
-        <p>Canada, M3J 2C7</p>
-      </div>
-      <p className="text-sm text-stone-500 mt-6">
-        Please include your return address and email so we can send you a confirmation and tax receipt.
-      </p>
-    </div>
-  </div>
-);
-
-// -- NETWORK SUB-PAGES --
-
-export const NetworkWhoWeAre: React.FC = () => (
-  <div className="max-w-3xl mx-auto px-4 py-12 text-center sm:text-left">
-    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Our Network</h3>
-    <div className="prose prose-lg text-stone-600 leading-relaxed">
-      <p>
-        We do not work in isolation. WETE is part of a global network of humanitarian organizations, academic institutions, and local community leaders.
-      </p>
-      <ul className="list-disc pl-5 space-y-3 mt-4">
-        <li><strong>Local Partners:</strong> Trusted community elders and educators who manage day-to-day operations.</li>
-        <li><strong>International NGOs:</strong> Partners who provide logistical support and advocacy.</li>
-        <li><strong>Academic Advisors:</strong> Education specialists who help design our curriculum.</li>
+      <ul className="list-disc pl-5 space-y-2 mt-2">
+        <li>Teacher salaries and training</li>
+        <li>Educational materials (books, stationery, tablets)</li>
+        <li>Secure communication infrastructure</li>
+        <li>Student stipends to support their families</li>
       </ul>
     </div>
   </div>
 );
 
-// -- LEGAL / FOOTER PAGES --
+export const BecomeDonor: React.FC = () => (
+  <div className="max-w-3xl mx-auto px-4 py-12">
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Become a Donor</h3>
+    <div className="prose prose-lg text-stone-600 leading-relaxed">
+      <p>
+        Your support changes lives. By becoming a donor, you are directly contributing to the education and empowerment of women in Afghanistan.
+      </p>
+      <div className="mt-8 p-6 bg-brand-sand/30 rounded-lg border border-brand-teal/20 text-center">
+        <p className="mb-4 font-medium">Donate securely online through our partner platform:</p>
+        <Button onClick={() => window.open("https://gofund.me/5233f0ce", "_blank")}>
+          Donate via GoFundMe
+        </Button>
+      </div>
+    </div>
+  </div>
+);
+
+export const MailDonations: React.FC = () => (
+  <div className="max-w-3xl mx-auto px-4 py-12">
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Mail Donations</h3>
+    <div className="prose prose-lg text-stone-600 leading-relaxed">
+      <p>
+        If you prefer to donate by cheque, please mail it to our headquarters in Canada.
+      </p>
+      <div className="mt-6 p-8 bg-white shadow-sm border border-stone-200 rounded-lg">
+        <h4 className="font-bold text-brand-darkBlue mb-2">Mailing Address:</h4>
+        <p className="text-stone-700">
+          Women's Empowerment Through Education (WETE)<br />
+          1000 Finch Ave West<br />
+          North York, Ontario<br />
+          Canada, M3J 2C7
+        </p>
+        <p className="mt-4 text-sm text-stone-500">
+          *Please make cheques payable to "Women's Empowerment Through Education". Include your return address for tax receipt purposes.
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+export const NetworkWhoWeAre: React.FC = () => (
+  <div className="max-w-3xl mx-auto px-4 py-12">
+    <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Our Network</h3>
+    <div className="prose prose-lg text-stone-600 leading-relaxed">
+      <p>
+        WETE operates within a global network of educational advocates, human rights organizations, and local community leaders.
+      </p>
+      <p className="mt-4">
+        Our strength lies in our partnerships. We collaborate with:
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mt-2">
+        <li>Local educators in Afghanistan who understand the cultural context.</li>
+        <li>International NGOs focused on women's rights.</li>
+        <li>Academic institutions providing curriculum support.</li>
+        <li>Diaspora communities in Canada and abroad.</li>
+      </ul>
+    </div>
+  </div>
+);
 
 export const PrivacyPolicy: React.FC = () => (
-  <div className="max-w-4xl mx-auto px-4 py-12">
+  <div className="max-w-3xl mx-auto px-4 py-12">
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Privacy Policy</h3>
-    <div className="prose text-stone-600 leading-relaxed text-sm">
-      <p className="mb-4">Last Updated: January 2026</p>
-      <p className="mb-4">
-        Women's Empowerment Through Education ("WETE", "we", "us") is committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information.
+    <div className="prose prose-sm text-stone-600 leading-relaxed">
+      <p>Last updated: October 2023</p>
+      <p className="mt-4">
+        Women's Empowerment Through Education (WETE) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or donate to our cause.
       </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">1. Information We Collect</h4>
-      <p className="mb-4">
-        We collect information you provide directly to us, such as when you donate, sign up for our newsletter, or contact us. This may include your name, email address, postal address, and payment information.
-      </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">2. How We Use Your Information</h4>
-      <p className="mb-4">
-        We use your information to process donations, send tax receipts, communicate with you about our programs, and comply with legal obligations.
-      </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">3. Data Security</h4>
+      <h4 className="font-bold text-brand-darkBlue mt-4 text-lg">Information Collection</h4>
       <p>
-        We implement appropriate technical and organizational measures to protect your personal data against unauthorized access or disclosure.
+        We collect information you provide directly to us, such as when you donate, sign up for our newsletter, or contact us. This may include your name, email address, phone number, and payment information.
+      </p>
+      <h4 className="font-bold text-brand-darkBlue mt-4 text-lg">Use of Information</h4>
+      <p>
+        We use your information to process donations, issue tax receipts, communicate with you about our programs, and improve our website. We do not sell or trade your personal information to third parties.
       </p>
     </div>
   </div>
 );
 
 export const CookiePolicy: React.FC = () => (
-  <div className="max-w-4xl mx-auto px-4 py-12">
+  <div className="max-w-3xl mx-auto px-4 py-12">
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Cookie Policy</h3>
-    <div className="prose text-stone-600 leading-relaxed text-sm">
-      <p className="mb-4">
-        This website uses cookies to enhance your browsing experience and analyze site traffic.
-      </p>
-      <p className="mb-4">
-        <strong>What are cookies?</strong> Cookies are small text files stored on your device when you visit a website.
-      </p>
+    <div className="prose prose-sm text-stone-600 leading-relaxed">
       <p>
-        We use essential cookies to make our site work and analytics cookies to understand how visitors interact with our content. You can control cookies through your browser settings.
+        Our website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device that help us understand how you use our site.
+      </p>
+      <h4 className="font-bold text-brand-darkBlue mt-4 text-lg">Types of Cookies We Use</h4>
+      <ul className="list-disc pl-5 space-y-2 mt-2">
+        <li><strong>Essential Cookies:</strong> Necessary for the website to function correctly.</li>
+        <li><strong>Analytics Cookies:</strong> Help us analyze website traffic and improve our content.</li>
+      </ul>
+      <p className="mt-4">
+        You can control or delete cookies through your browser settings. However, disabling cookies may affect some features of our website.
       </p>
     </div>
   </div>
 );
 
 export const TermsConditions: React.FC = () => (
-  <div className="max-w-4xl mx-auto px-4 py-12">
+  <div className="max-w-3xl mx-auto px-4 py-12">
     <h3 className="text-2xl font-serif font-bold text-brand-darkBlue mb-6">Terms and Conditions</h3>
-    <div className="prose text-stone-600 leading-relaxed text-sm">
-      <p className="mb-4">
-        Welcome to the WETE website. By accessing this site, you agree to comply with these terms and conditions.
-      </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">1. Use of Content</h4>
-      <p className="mb-4">
-        All content on this website, including text, images, and logos, is the property of WETE. You may not reproduce or distribute this content without our prior written permission.
-      </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">2. Donations</h4>
-      <p className="mb-4">
-        All donations are final. If you believe an error has occurred in processing your donation, please contact us immediately.
-      </p>
-      <h4 className="font-bold text-brand-darkBlue mt-4 mb-2">3. Limitation of Liability</h4>
+    <div className="prose prose-sm text-stone-600 leading-relaxed">
       <p>
-        WETE is not liable for any damages arising from your use of this website.
+        Welcome to the WETE website. By accessing this site, you agree to comply with these Terms and Conditions.
+      </p>
+      <h4 className="font-bold text-brand-darkBlue mt-4 text-lg">Intellectual Property</h4>
+      <p>
+        All content on this website, including text, graphics, logos, and images, is the property of WETE and is protected by copyright laws. You may not use our content without prior written permission.
+      </p>
+      <h4 className="font-bold text-brand-darkBlue mt-4 text-lg">Disclaimer</h4>
+      <p>
+        The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind about the completeness or accuracy of the information.
       </p>
     </div>
   </div>

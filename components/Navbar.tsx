@@ -35,6 +35,7 @@ export const Navbar: React.FC = () => {
         { label: 'Our First Project', path: '/programs/our-first-project' },
         { label: 'Funding', path: '/programs/funding' },
         { label: 'Become a Donor', path: '/programs/how-to-become-a-donor' },
+        { label: 'Paypal Donation', path: '/programs/paypal-donation' },
         { label: 'Mail Donations', path: '/programs/mail-donations' },
       ]
     },
