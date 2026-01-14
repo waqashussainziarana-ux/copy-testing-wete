@@ -86,7 +86,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2021/05/IMG_6448-2-scaled.jpg" 
+          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6448-2-scaled-1.jpg" 
           alt="Students in class" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
@@ -143,7 +143,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2021/05/IMG_6435-3-scaled.jpg" 
+          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6435-3-scaled-1.jpg" 
           alt="Writing exercises" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
