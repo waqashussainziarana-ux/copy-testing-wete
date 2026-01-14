@@ -75,17 +75,17 @@ export const OurFirstProject: React.FC = () => (
         Our operational strategy is organized in three main phases. These phases are created to provide a gradual growth of our reach and influence as we expand as an organization and establish a greater network.
       </p>
 
-      <p className="mb-6">
-        The first two phases will focus on smaller villages in Afghanistan because that is where our management team has the most cultural knowledge and expertise. As our resources grow, however, we will direct our attention to other communities across the globe that lack the basic opportunities for primary education. This, however, will unfold in the third phase.
-      </p>
-
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2021/05/Screen-Shot-2021-05-24-at-9.43.34-PM.png" 
-          alt="Project Structure Phases: Phase 1 (Jalalabad), Phase 2 (Other communities), Phase 3 (Global)" 
+          src="https://wete.ca/wp-content/uploads/2022/06/unnamed.png" 
+          alt="Project Structure Phases" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
       </div>
+
+      <p className="mb-6">
+        The first two phases will focus on smaller villages in Afghanistan because that is where our management team has the most cultural knowledge and expertise. As our resources grow, however, we will direct our attention to other communities across the globe that lack the basic opportunities for primary education. This, however, will unfold in the third phase.
+      </p>
 
       <h4 className="text-xl font-bold text-brand-darkBlue mt-10 mb-4">Phase 1: Jalalabad, Afghanistan</h4>
 
@@ -119,7 +119,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://wete.ca/wp-content/uploads/2021/05/Screen-Shot-2021-05-24-at-9.52.27-PM.png" 
+          src="https://wete.ca/wp-content/uploads/2022/06/unnamed-1.png" 
           alt="Annual Costs Table" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
