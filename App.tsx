@@ -15,6 +15,7 @@ import { BackToTop } from './components/BackToTop';
 import { Volunteer } from './components/Volunteer';
 import { PageHeader } from './components/PageHeader';
 import { Contact } from './components/Contact';
+import { AlertCircle } from 'lucide-react';
 import { 
   MissionStatement, 
   Vision, 
@@ -29,6 +30,9 @@ import {
   CookiePolicy,
   TermsConditions
 } from './components/SubPages';
+
+// Toggle this variable to make the website online/offline
+const IS_OFFLINE = true;
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
@@ -55,6 +59,24 @@ const PageLayout: React.FC<PageLayoutProps> = ({ title, subtitle, children }) =>
       {children}
     </div>
   </>
+);
+
+// -- OFFLINE PAGE --
+const OfflinePage = () => (
+  <div className="fixed inset-0 z-[9999] bg-stone-50 flex items-center justify-center p-6 text-center">
+    <div className="max-w-md w-full bg-white p-10 rounded-2xl shadow-xl border border-stone-200">
+      <div className="flex justify-center mb-6">
+        <div className="p-4 bg-red-50 rounded-full">
+          <AlertCircle className="w-12 h-12 text-red-500" />
+        </div>
+      </div>
+      <h1 className="text-2xl font-serif font-bold text-brand-darkBlue mb-4">Service Unavailable</h1>
+      <p className="text-stone-600 text-lg leading-relaxed mb-8">
+        hosting expired contact the concerned person
+      </p>
+      <div className="w-16 h-1 bg-brand-accent mx-auto rounded-full opacity-50"></div>
+    </div>
+  </div>
 );
 
 // -- PAGE COMPONENTS --
@@ -144,6 +166,10 @@ const ContactPage = () => (
 );
 
 const App: React.FC = () => {
+  if (IS_OFFLINE) {
+    return <OfflinePage />;
+  }
+
   return (
     <HashRouter>
       <div className="min-h-screen font-sans selection:bg-brand-accent selection:text-white flex flex-col">
@@ -210,8 +236,6 @@ const App: React.FC = () => {
                 <MailDonations />
               </PageLayout>
             } />
-
-            {/* Network Sub-pages route removed */}
 
             {/* Legal Pages */}
             <Route path="/privacy-policy" element={
