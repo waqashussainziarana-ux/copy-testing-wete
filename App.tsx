@@ -32,7 +32,7 @@ import {
 } from './components/SubPages';
 
 // Toggle this variable to make the website online/offline
-const IS_OFFLINE = false;
+const IS_OFFLINE = true;
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
