@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
@@ -32,7 +33,7 @@ import {
 } from './components/SubPages';
 
 // Toggle this variable to make the website online/offline
-const IS_OFFLINE = true;
+const IS_OFFLINE = false;
 
 // Helper to handle scroll position on route change
 const ScrollToTop = () => {
