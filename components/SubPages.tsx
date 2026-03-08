@@ -68,7 +68,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/Add-this-image-after-the-paragraph-starting-from-22The-First-Two-phases.png" 
+          src="https://gadgetwall.eu/wp-content/uploads/2026/03/IMG_6457-2-1024x603-1.jpg" 
           alt="Project Structure Phases" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
@@ -86,7 +86,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6448-2-scaled-1.jpg" 
+          src="https://gadgetwall.eu/wp-content/uploads/2026/03/IMG_6448-2-scaled-1.jpg" 
           alt="Students in class" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
@@ -110,7 +110,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/unnamed-1-1.png" 
+          src="https://gadgetwall.eu/wp-content/uploads/2026/03/IMG_6484-2-1-scaled-1.jpg" 
           alt="Annual Costs Table" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
@@ -143,7 +143,7 @@ export const OurFirstProject: React.FC = () => (
 
       <div className="my-10">
         <img 
-          src="https://bokhariaircraftenterprises.com/wp-content/uploads/2026/01/IMG_6435-3-scaled-1.jpg" 
+          src="https://gadgetwall.eu/wp-content/uploads/2026/03/IMG_6435-3-scaled-1.jpg" 
           alt="Writing exercises" 
           className="w-full h-auto rounded-xl shadow-lg border-4 border-white"
         />
